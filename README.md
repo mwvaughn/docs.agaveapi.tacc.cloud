@@ -17,15 +17,15 @@ You can develop using a local native Ruby workflow, but that's not supported by 
 ### Quick Set Up
 
  1. Fork this repository on GitHub
- 2. Clone *your forked repository* (not the original one) to your hard drive with `git clone https://github.com/YOURGITHUBUSERNAME/docs.agaveapi.tacc.cloud.git  agave-docs`
+ 2. Clone *your forked repository* (not the original one) to your hard drive with `git clone https://github.com/YOURUSERNAME/agaveapi.docs.tacc.cloud.git agave-docs`
  3. `cd agave-docs`
  4. Add a remote branch `git remote add upstream https://github.com/mwvaughn/docs.agaveapi.tacc.cloud.git`
  5. `git checkout -b <new_branch>`
- 6. `docker-compose up -d`
+ 6. `docker-compose -d up`
  7. View API docs at http://localhost:4567/
  8. Edit away inside `source/`
  9. Commit your changes and merge into `develop`
- 10. Issue a PR against the upstream `mwvaughn/agaveapi.docs.tacc.cloud` repository
+ 10. Issue a PR against the upstream `TACC/agaveapi.docs.tacc.cloud` repository
 
 #### Updating from the upstream repository
 
@@ -47,6 +47,6 @@ Learn [how to publish your docs](https://github.com/lord/slate/wiki/Deploying-Sl
 * `docker-compose logs slateapp` will display logs, which can be helpful in debugging rendering issues
 * `docker run --rm -v $(pwd):/usr/src/docs -w /usr/src/docs ruby:2.3.1 bundle lock --update` updates local Gemfile.lock
 
-## Need Help? Found a bug?
-
+Need Help? Found a bug?
+--------------------
 
